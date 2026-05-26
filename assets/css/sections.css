@@ -1,0 +1,227 @@
+/* ============================================
+   sections.css — Services, Metrics, Process, Testimonials, CTA
+   ============================================ */
+
+/* SERVIÇOS */
+#servicos {
+  background-color: var(--bg);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.service-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  background-color: var(--white);
+  transition: all 0.15s ease;
+}
+
+.service-card:hover {
+  border-color: var(--ink);
+}
+
+.service-number {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.service-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.service-description {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 20px;
+}
+
+.service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* MÉTRICAS */
+.metrics-section {
+  background-color: var(--dark-bg);
+  color: var(--white);
+  padding: 80px 0;
+}
+
+.metrics-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.metric-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.metric-number {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  color: var(--white);
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.metric-label {
+  font-size: 15px;
+  color: var(--muted-light);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* PROCESSO */
+#processo {
+  background-color: var(--bg);
+}
+
+.process-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.process-step {
+  padding-right: 40px;
+  border-right: 1px solid var(--border);
+}
+
+.process-step:last-child {
+  border-right: none;
+}
+
+.process-number {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+
+.process-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+.process-description {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+/* DEPOIMENTOS */
+.testimonial-section {
+  background-color: var(--white);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 96px 40px;
+}
+
+.testimonial-header {
+  max-width: var(--max-width);
+  margin: 0 auto 60px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  background-color: var(--bg);
+}
+
+.testimonial-quote {
+  font-size: 15px;
+  font-style: italic;
+  color: var(--ink);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.testimonial-author {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.testimonial-role {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+/* CTA FINAL */
+.cta-section {
+  background-color: var(--bg);
+  padding: 96px 40px;
+}
+
+.cta-container {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 52px;
+  letter-spacing: -2px;
+  margin-bottom: 24px;
+  line-height: 1.1;
+}
+
+.cta-subtitle {
+  font-size: 17px;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 48px;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

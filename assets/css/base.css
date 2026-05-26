@@ -1,0 +1,178 @@
+/* ============================================
+   base.css — Reset, CSS Variables, Typography
+   ============================================ */
+
+:root {
+  --ink: #191919;
+  --ink-soft: #3d3d3d;
+  --muted: #6b6b6b;
+  --muted-light: #9b9b9b;
+  --bg: #F9F9F8;
+  --white: #ffffff;
+  --border: #E4E4E2;
+  --border-soft: #EFEFED;
+  --tag-bg: #EFEFED;
+  --dark-bg: #111110;
+  --dark-surface: #1a1a19;
+  --dark-border: #2e2e2c;
+  --accent-green: #34C25A;
+  --accent-green-bg: #e8f7ee;
+  --accent-green-text: #1a8a3e;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  --max-width: 1140px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 68px;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--ink);
+  background-color: var(--bg);
+  line-height: 1.6;
+}
+
+/* Typography */
+h1 {
+  font-size: 58px;
+  font-weight: 700;
+  letter-spacing: -2.5px;
+  line-height: 1.06;
+  color: var(--ink);
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -1.2px;
+  color: var(--ink);
+}
+
+p {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.label-secondary {
+  color: var(--muted);
+}
+
+/* Layout Utilities */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.section-spacing {
+  padding: 96px 40px;
+}
+
+/* Links & Buttons */
+a {
+  color: var(--ink);
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.15s ease;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.btn-primary {
+  background-color: var(--ink);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid var(--muted);
+  color: var(--ink);
+}
+
+.btn-secondary:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.btn-lg {
+  padding: 14px 32px;
+  font-size: 16px;
+}
+
+/* Animations */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Service Tags */
+.service-tag {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: var(--tag-bg);
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
