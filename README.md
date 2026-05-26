@@ -6,7 +6,7 @@
 
 Landing page production-ready para consultoria B2B especializada em transformação digital e analytics.
 
-## 🎯 Destaques
+## Destaques
 
 - **Design System completo** — paleta de cores, tipografia e espaçamento padronizados via CSS variables
 - **100% responsivo** — funciona em mobile (375px), tablet e desktop com media queries
@@ -15,7 +15,7 @@ Landing page production-ready para consultoria B2B especializada em transformaç
 - **Zero dependências** — apenas HTML5, CSS3 e JavaScript vanilla
 - **Arquitetura modular** — CSS separado por responsabilidade (base, layout, sections, responsive)
 
-## 🛠 Tecnologias
+## Tecnologias
 
 | Tecnologia | Uso |
 |-----------|-----|
@@ -26,7 +26,7 @@ Landing page production-ready para consultoria B2B especializada em transformaç
 
 **Sem bundler** — funciona nativamente no navegador com ES Modules.
 
-## 📁 Estrutura
+## Estrutura
 
 ```
 landingpage/
@@ -43,7 +43,7 @@ landingpage/
 │       └── animations.js (IntersectionObserver)
 ```
 
-## 🚀 Como Rodar
+## Como Rodar
 
 ### Opção 1: Abrir Direto (Mais Simples)
 ```bash
@@ -67,7 +67,7 @@ npx serve .
 # Acesse: http://localhost:3000
 ```
 
-## ✨ Recursos Implementados
+## Recursos Implementados
 
 - ✅ 9 seções completas (Nav, Hero, Logo Bar, Serviços, Métricas, Processo, Depoimentos, CTA, Footer)
 - ✅ Nav sticky com glassmorphism blur
@@ -78,7 +78,7 @@ npx serve .
 - ✅ Modo dark (seção de métricas)
 - ✅ Links funcionais (mailto, tel, âncoras)
 
-## 📱 Responsividade
+## Responsividade
 
 | Viewport | Status |
 |----------|--------|
